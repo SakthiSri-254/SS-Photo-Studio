@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback From You...</title>
+  <script src="https://kit.fontawesome.com/841a4a45ae.js">
+      
+</script>
+    
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.subbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.hpy {
+  border: 1px solid black;
+  margin: 10px 100px 7px 500px;
+  background-color: crimson;
+  padding: 16px 20px;
+  color:snow;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  text-align: center;
+}
+    
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+    
+
+</style>
+    
+
+</head>
+<body>
+
+<form action="" autocomplete="on">
+  <div class="container" style="background-image: url(images/klog.png);background-repeat: no-repeat; background-attachment:fixed;background-size: cover;">
+    <h1>Comment on us!</h1>
+    <p>Please fill in this form and encourage us.</p>
+    <hr>
+     
+    <fieldset>
+	<legend>Dearest:</legend>
+    <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="First Name"  id="fname" required oninvalid="alert('You must fill out the form!');">
+    <input type="text" placeholder="Last Name"  id="lname" required>
+    </fieldset>
+    <br>
+  
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="cb"><b>What you liked in us?</b></label>
+      <br>
+      <br>
+      <input name = "thingsliked" type = "checkbox" value = "Design" checked>Campus
+      
+		<input name = "thingsliked" type = "checkbox" value = "Links">Our Service
+      
+		<input name = "thingsliked" type = "checkbox" value = "Ease" >Affordable fees
+      
+		<input name = "thingsliked" type = "checkbox" value = "Images">Infrastructure
+    <br>
+      <br>
+      <br>
+    
+    
+
+    <label for="rb"><b>How did you get to our College?</b></label>
+      
+       	<br>
+      <br>
+ 		<input name = "howtosite" type = "radio" value = "google">Management
+		<input name = "howtosite" type = "radio"  value = "frnd">Sports quota
+		<input name = "howtosite" type = "radio"  value = "buyagn"  checked>Counselling
+      <br>
+      <br>
+      
+      
+    <label for="cmt"><b>Your thoughts about us can help us grow!</b></label>
+      
+      <br>
+      <br>
+      
+	<textarea name = "comments" rows = "8" cols = "35" >The campus life is very aesthetic.</textarea>
+	<br>
+      <br>
+      
+     <label for="rate"><b>Let all the stars blink....!</b></label><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+      
+      <br>
+      <br>
+      
+     
+      <select name = "rating">
+		<option selected>Amazing</option>
+		<option >4</option>
+		<option >3</option>
+		<option>2</option>
+		<option>1</option>
+      </select>
+     
+      
+      <br>
+      <br>
+      <br>
+      
+      
+      <label for="time"><b>The time when you submit the feedback is</b></label>
+	<button onclick="this.innerHTML=Date()">Feedback submission time is noted for our purpose.</button>
+      <br>
+      <br>
+	<label for="dob"><b>We would like to wish you on your special day....Your birthday!</b></label>
+      <br>
+      <br>
+      <input type="date" id="birthday" name="birthday">
+      
+    <br>
+    <br>
+    <br>
+    <p class="hpy">Wishing you a happy and a safe stay at Kongu Hostels<i class="fas fa-kiss-wink-heart fa-2x"></i></p>
+      
+      <br>
+    
+    <hr>
+    
+    <button type="submit" class="subbtn">Submit</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Thanks for spending your time to write to us  <i class="far fa-smile fa-2x"></i></p>
+    <p>Click here to go back... <a href="index.html"><i class="fas fa-house-user fa-2x"></i></a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
